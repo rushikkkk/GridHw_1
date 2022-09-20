@@ -1,0 +1,71 @@
+﻿<Page x:Class="GridHw_1.StrF"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GridHw_1"  
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StrF">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition >
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#FF7D7373" Grid.Row="1" Grid.RowSpan="2"></StackPanel>
+        <StackPanel Background="#FF7D7373" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2"></StackPanel>
+        <StackPanel Background="#FFD8D8D8" Grid.ColumnSpan="3">
+            <TextBlock FontSize="20" FontWeight="Bold" Grid.Column="1" Margin="0,35,0,0" HorizontalAlignment="Center">
+                Mi First XAML DESIGN
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="#FFDAA1A1">
+            <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" Foreground="#FFF7F7F7" FontSize="16">
+                Top Rectanle
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1" Background="#FFD25353">
+            <TextBlock HorizontalAlignment="Center" Margin="0,70,0,0" Foreground="#FFF7F7F7" FontSize="16">
+                Bottom Rectangle
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <TextBlock Foreground="#FFE0D6D6" FontSize="14" >
+                Some Text
+            </TextBlock>
+            <TextBlock Foreground="#FFE0D6D6" Margin="0,20,0,0" FontSize="14">
+                Some Text
+            </TextBlock>
+            <TextBlock Foreground="#FFE0D6D6" Margin="0,20,0,0" FontSize="14"> 
+                Some Text
+            </TextBlock>
+            <TextBlock Foreground="#FFE0D6D6" Margin="0,20,0,0" FontSize="14"> 
+                Some Text
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="0,20,0,0" HorizontalAlignment="Center">
+            <TextBlock FontSize="14" Foreground="#FFE0D6D6">
+                Some Text1
+            </TextBlock>
+            <TextBlock Margin="0,20,0,0" FontSize="14" Foreground="#FFE0D6D6" >
+                Some Text1
+            </TextBlock>
+            <TextBlock Margin="0,20,0,0" FontSize="14" Foreground="#FFE0D6D6">
+                Some Text1
+            </TextBlock>
+            <TextBlock Margin="0,20,0,0" FontSize="14" Foreground="#FFE0D6D6">
+                Some Text1
+            </TextBlock>
+        </StackPanel>
+        <Frame x:Name="List" Grid.Row="0"></Frame>
+    </Grid>
+</Page>
